@@ -87,12 +87,12 @@
 		519AE14B2194787D001F5CFF /* HackingWithSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F39DBD7C22B7DF3E0080F2E4 /* Models */,
 				F39DBD7922B7D6BF0080F2E4 /* Extensions */,
 				519AE14C2194787D001F5CFF /* AppDelegate.swift */,
 				519AE14E2194787D001F5CFF /* ViewController.swift */,
 				519AE16C21947911001F5CFF /* DetailViewController.swift */,
 				519AE17221948C5A001F5CFF /* ReadViewController.swift */,
-				519AE16E219479E3001F5CFF /* Project.swift */,
 				519AE1502194787D001F5CFF /* Main.storyboard */,
 				519AE1532194787E001F5CFF /* Assets.xcassets */,
 				519AE1552194787E001F5CFF /* LaunchScreen.storyboard */,
@@ -117,6 +117,14 @@
 				F39DBD7A22B7D6D50080F2E4 /* Bundle+Decoding.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F39DBD7C22B7DF3E0080F2E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				519AE16E219479E3001F5CFF /* Project.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
