@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
-    var projects = [Project]()
+    var dataSource: ProjectTableViewDataSource!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,35 +17,30 @@ class ViewController: UITableViewController {
         title = "Hacking with Swift"
         navigationController?.navigationBar.prefersLargeTitles = true
 
-        projects = Bundle.main.decode(from: "projects.json")
+        setupTableView()
     }
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return projects.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let project = projects[indexPath.row]
-        
-        cell.textLabel?.attributedText = project.attributedTitle
-        
-        return cell
-    }
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let project = projects[indexPath.row]
-
+        let project = dataSource.project(at: indexPath.row)
+        
         guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
             return
         }
-
+        
         detailVC.project = project
         navigationController?.pushViewController(detailVC, animated: true)
+    }
+}
+
+
+// MARK: - Private helpers
+
+private extension ViewController {
+    func setupTableView() {
+        let dataSource = ProjectTableViewDataSource()
+        
+        self.dataSource = dataSource
+        tableView.dataSource = dataSource
     }
 }
 
