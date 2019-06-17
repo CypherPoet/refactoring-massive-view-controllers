@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProjectListViewController.swift
 //  HackingWithSwift
 //
 //  Created by Paul Hudson on 08/11/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class ProjectListViewController: UITableViewController {
     var dataSource: ProjectTableViewDataSource!
 
     override func viewDidLoad() {
@@ -35,7 +35,7 @@ class ViewController: UITableViewController {
 
 // MARK: - Private helpers
 
-private extension ViewController {
+private extension ProjectListViewController {
     func setupTableView() {
         let dataSource = ProjectTableViewDataSource()
         
