@@ -20,13 +20,13 @@
 		F33073BC22BD7DC000F7BEB9 /* ProjectsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33073BB22BD7DC000F7BEB9 /* ProjectsCoordinator.swift */; };
 		F33073BE22BD7E9000F7BEB9 /* NavigationControlling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33073BD22BD7E9000F7BEB9 /* NavigationControlling.swift */; };
 		F33073C122BD7FDE00F7BEB9 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33073C022BD7FDE00F7BEB9 /* NavigationCoordinator.swift */; };
+		F33073C422BD903700F7BEB9 /* ReadProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33073C322BD903600F7BEB9 /* ReadProjectViewController.swift */; };
 		F39DBD7B22B7D6D50080F2E4 /* Bundle+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD7A22B7D6D50080F2E4 /* Bundle+Decoding.swift */; };
 		F39DBD8022B7E0930080F2E4 /* ProjectTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD7F22B7E0930080F2E4 /* ProjectTableViewDataSource.swift */; };
 		F39DBD8522B8171E0080F2E4 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD8422B8171E0080F2E4 /* ProjectDetailView.swift */; };
 		F39DBD8722B81C520080F2E4 /* ProjectDetailViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD8622B81C520080F2E4 /* ProjectDetailViewDelegate.swift */; };
 		F39DBD8A22B81F740080F2E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39DBD8822B81F720080F2E4 /* Main.storyboard */; };
 		F39DBD8B22B81F740080F2E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39DBD8922B81F740080F2E4 /* LaunchScreen.storyboard */; };
-		F39DBD8D22B8215B0080F2E4 /* ReadProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD8C22B8215B0080F2E4 /* ReadProjectViewController.swift */; };
 		F39DBD9122B821E50080F2E4 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD9022B821E50080F2E4 /* NavigationDelegate.swift */; };
 		F39DBD9322B827370080F2E4 /* WKWebView+LoadURLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD9222B827370080F2E4 /* WKWebView+LoadURLString.swift */; };
 /* End PBXBuildFile section */
@@ -59,13 +59,13 @@
 		F33073BB22BD7DC000F7BEB9 /* ProjectsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsCoordinator.swift; sourceTree = "<group>"; };
 		F33073BD22BD7E9000F7BEB9 /* NavigationControlling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControlling.swift; sourceTree = "<group>"; };
 		F33073C022BD7FDE00F7BEB9 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		F33073C322BD903600F7BEB9 /* ReadProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadProjectViewController.swift; sourceTree = "<group>"; };
 		F39DBD7A22B7D6D50080F2E4 /* Bundle+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decoding.swift"; sourceTree = "<group>"; };
 		F39DBD7F22B7E0930080F2E4 /* ProjectTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewDataSource.swift; sourceTree = "<group>"; };
 		F39DBD8422B8171E0080F2E4 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
 		F39DBD8622B81C520080F2E4 /* ProjectDetailViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewDelegate.swift; sourceTree = "<group>"; };
 		F39DBD8822B81F720080F2E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F39DBD8922B81F740080F2E4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F39DBD8C22B8215B0080F2E4 /* ReadProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadProjectViewController.swift; sourceTree = "<group>"; };
 		F39DBD9022B821E50080F2E4 /* NavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
 		F39DBD9222B827370080F2E4 /* WKWebView+LoadURLString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+LoadURLString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,7 +163,7 @@
 		F33073C222BD8F6C00F7BEB9 /* Read Project */ = {
 			isa = PBXGroup;
 			children = (
-				F39DBD8C22B8215B0080F2E4 /* ReadProjectViewController.swift */,
+				F33073C322BD903600F7BEB9 /* ReadProjectViewController.swift */,
 			);
 			path = "Read Project";
 			sourceTree = "<group>";
@@ -328,7 +328,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39DBD8D22B8215B0080F2E4 /* ReadProjectViewController.swift in Sources */,
 				519AE16D21947911001F5CFF /* ProjectDetailViewController.swift in Sources */,
 				F33073B722BC9BBD00F7BEB9 /* AppCoordinator.swift in Sources */,
 				519AE14F2194787D001F5CFF /* ProjectListViewController.swift in Sources */,
@@ -342,6 +341,7 @@
 				F33073B422BC9B1400F7BEB9 /* Coordinator.swift in Sources */,
 				F33073C122BD7FDE00F7BEB9 /* NavigationCoordinator.swift in Sources */,
 				519AE16F219479E3001F5CFF /* Project.swift in Sources */,
+				F33073C422BD903700F7BEB9 /* ReadProjectViewController.swift in Sources */,
 				F39DBD9322B827370080F2E4 /* WKWebView+LoadURLString.swift in Sources */,
 				F39DBD8522B8171E0080F2E4 /* ProjectDetailView.swift in Sources */,
 				F33073B922BD6B0D00F7BEB9 /* Storyboarded.swift in Sources */,

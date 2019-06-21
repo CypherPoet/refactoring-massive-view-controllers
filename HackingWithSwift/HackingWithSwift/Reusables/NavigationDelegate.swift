@@ -9,32 +9,43 @@
 import UIKit
 import WebKit
 
-class NavigationDelegate: NSObject, WKNavigationDelegate {
+class NavigationDelegate: NSObject {
     private let allowedSites: [String]
     
     
-    init(
-        allowedSites: [String] = ["apple.com", "hackingwithswift.com"]
-    ) {
+    init(allowedSites: [String] = ["apple.com", "hackingwithswift.com"]) {
         self.allowedSites = allowedSites
         super.init()
     }
+}
     
+
+// MARK: - WKNavigationDelegate
+
+extension NavigationDelegate: WKNavigationDelegate {
     
     func webView(
         _ webView: WKWebView,
         decidePolicyFor navigationAction: WKNavigationAction,
         decisionHandler: @escaping (WKNavigationActionPolicy) -> Void
     ) {
-        guard let host = navigationAction.request.url?.host else {
-            return decisionHandler(.cancel)
+        let isSiteAllowed = isAllowed(navigationAction.request.url)
+        
+        return decisionHandler(isSiteAllowed ? .allow : .cancel)
+    }
+}
+
+
+// MARK: - Private Helpers
+
+extension NavigationDelegate {
+    
+    func isAllowed(_ url: URL?) -> Bool {
+        guard let host = url?.host else {
+            return false
         }
         
-        if allowedSites.contains(where: host.contains) {
-            decisionHandler(.allow)
-        } else {
-            print("Disallowed invalid site: \(host).")
-            decisionHandler(.cancel)
-        }
+        return allowedSites.contains(where: host.contains)
     }
+    
 }
