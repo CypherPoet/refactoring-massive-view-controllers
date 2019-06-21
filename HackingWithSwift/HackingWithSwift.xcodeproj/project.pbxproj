@@ -14,13 +14,21 @@
 		519AE16D21947911001F5CFF /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519AE16C21947911001F5CFF /* ProjectDetailViewController.swift */; };
 		519AE16F219479E3001F5CFF /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519AE16E219479E3001F5CFF /* Project.swift */; };
 		519AE17121947AB5001F5CFF /* projects.json in Resources */ = {isa = PBXBuildFile; fileRef = 519AE17021947AB5001F5CFF /* projects.json */; };
-		519AE17321948C5A001F5CFF /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519AE17221948C5A001F5CFF /* ReadViewController.swift */; };
+		F33073B422BC9B1400F7BEB9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33073B322BC9B1400F7BEB9 /* Coordinator.swift */; };
+		F33073B722BC9BBD00F7BEB9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33073B622BC9BBD00F7BEB9 /* AppCoordinator.swift */; };
+		F33073B922BD6B0D00F7BEB9 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33073B822BD6B0D00F7BEB9 /* Storyboarded.swift */; };
+		F33073BC22BD7DC000F7BEB9 /* ProjectsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33073BB22BD7DC000F7BEB9 /* ProjectsCoordinator.swift */; };
+		F33073BE22BD7E9000F7BEB9 /* NavigationControlling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33073BD22BD7E9000F7BEB9 /* NavigationControlling.swift */; };
+		F33073C122BD7FDE00F7BEB9 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33073C022BD7FDE00F7BEB9 /* NavigationCoordinator.swift */; };
 		F39DBD7B22B7D6D50080F2E4 /* Bundle+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD7A22B7D6D50080F2E4 /* Bundle+Decoding.swift */; };
 		F39DBD8022B7E0930080F2E4 /* ProjectTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD7F22B7E0930080F2E4 /* ProjectTableViewDataSource.swift */; };
 		F39DBD8522B8171E0080F2E4 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD8422B8171E0080F2E4 /* ProjectDetailView.swift */; };
 		F39DBD8722B81C520080F2E4 /* ProjectDetailViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD8622B81C520080F2E4 /* ProjectDetailViewDelegate.swift */; };
 		F39DBD8A22B81F740080F2E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39DBD8822B81F720080F2E4 /* Main.storyboard */; };
 		F39DBD8B22B81F740080F2E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39DBD8922B81F740080F2E4 /* LaunchScreen.storyboard */; };
+		F39DBD8D22B8215B0080F2E4 /* ReadProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD8C22B8215B0080F2E4 /* ReadProjectViewController.swift */; };
+		F39DBD9122B821E50080F2E4 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD9022B821E50080F2E4 /* NavigationDelegate.swift */; };
+		F39DBD9322B827370080F2E4 /* WKWebView+LoadURLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DBD9222B827370080F2E4 /* WKWebView+LoadURLString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +53,21 @@
 		519AE16C21947911001F5CFF /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
 		519AE16E219479E3001F5CFF /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		519AE17021947AB5001F5CFF /* projects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = projects.json; sourceTree = "<group>"; };
-		519AE17221948C5A001F5CFF /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		F33073B322BC9B1400F7BEB9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F33073B622BC9BBD00F7BEB9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F33073B822BD6B0D00F7BEB9 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		F33073BB22BD7DC000F7BEB9 /* ProjectsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsCoordinator.swift; sourceTree = "<group>"; };
+		F33073BD22BD7E9000F7BEB9 /* NavigationControlling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControlling.swift; sourceTree = "<group>"; };
+		F33073C022BD7FDE00F7BEB9 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		F39DBD7A22B7D6D50080F2E4 /* Bundle+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decoding.swift"; sourceTree = "<group>"; };
 		F39DBD7F22B7E0930080F2E4 /* ProjectTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewDataSource.swift; sourceTree = "<group>"; };
 		F39DBD8422B8171E0080F2E4 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
 		F39DBD8622B81C520080F2E4 /* ProjectDetailViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewDelegate.swift; sourceTree = "<group>"; };
 		F39DBD8822B81F720080F2E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F39DBD8922B81F740080F2E4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F39DBD8C22B8215B0080F2E4 /* ReadProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadProjectViewController.swift; sourceTree = "<group>"; };
+		F39DBD9022B821E50080F2E4 /* NavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
+		F39DBD9222B827370080F2E4 /* WKWebView+LoadURLString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+LoadURLString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,7 @@
 				519AE1582194787E001F5CFF /* Info.plist */,
 				519AE14C2194787D001F5CFF /* AppDelegate.swift */,
 				F39DBD8222B815C80080F2E4 /* Content */,
+				F33073B522BC9BAA00F7BEB9 /* Coordinators */,
 				F39DBD7922B7D6BF0080F2E4 /* Extensions */,
 				F39DBD7C22B7DF3E0080F2E4 /* Models */,
 				F39DBD7E22B7E06F0080F2E4 /* Reusables */,
@@ -113,10 +130,49 @@
 			path = HackingWithSwiftTests;
 			sourceTree = "<group>";
 		};
+		F33073B222BC9ACF00F7BEB9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F33073B322BC9B1400F7BEB9 /* Coordinator.swift */,
+				F33073B822BD6B0D00F7BEB9 /* Storyboarded.swift */,
+				F33073BD22BD7E9000F7BEB9 /* NavigationControlling.swift */,
+				F33073C022BD7FDE00F7BEB9 /* NavigationCoordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F33073B522BC9BAA00F7BEB9 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F33073B622BC9BBD00F7BEB9 /* AppCoordinator.swift */,
+				F33073BB22BD7DC000F7BEB9 /* ProjectsCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F33073BA22BD7D6F00F7BEB9 /* Project Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F39DBD8422B8171E0080F2E4 /* ProjectDetailView.swift */,
+				519AE16C21947911001F5CFF /* ProjectDetailViewController.swift */,
+				F39DBD8622B81C520080F2E4 /* ProjectDetailViewDelegate.swift */,
+			);
+			path = "Project Detail";
+			sourceTree = "<group>";
+		};
+		F33073C222BD8F6C00F7BEB9 /* Read Project */ = {
+			isa = PBXGroup;
+			children = (
+				F39DBD8C22B8215B0080F2E4 /* ReadProjectViewController.swift */,
+			);
+			path = "Read Project";
+			sourceTree = "<group>";
+		};
 		F39DBD7922B7D6BF0080F2E4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				F39DBD7A22B7D6D50080F2E4 /* Bundle+Decoding.swift */,
+				F39DBD9222B827370080F2E4 /* WKWebView+LoadURLString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,7 +188,9 @@
 		F39DBD7E22B7E06F0080F2E4 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				F33073B222BC9ACF00F7BEB9 /* Protocols */,
 				F39DBD7F22B7E0930080F2E4 /* ProjectTableViewDataSource.swift */,
+				F39DBD9022B821E50080F2E4 /* NavigationDelegate.swift */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -159,11 +217,9 @@
 		F39DBD8322B815DE0080F2E4 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				519AE16C21947911001F5CFF /* ProjectDetailViewController.swift */,
-				519AE17221948C5A001F5CFF /* ReadViewController.swift */,
+				F33073C222BD8F6C00F7BEB9 /* Read Project */,
+				F33073BA22BD7D6F00F7BEB9 /* Project Detail */,
 				519AE14E2194787D001F5CFF /* ProjectListViewController.swift */,
-				F39DBD8422B8171E0080F2E4 /* ProjectDetailView.swift */,
-				F39DBD8622B81C520080F2E4 /* ProjectDetailViewDelegate.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -272,15 +328,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39DBD8D22B8215B0080F2E4 /* ReadProjectViewController.swift in Sources */,
 				519AE16D21947911001F5CFF /* ProjectDetailViewController.swift in Sources */,
+				F33073B722BC9BBD00F7BEB9 /* AppCoordinator.swift in Sources */,
 				519AE14F2194787D001F5CFF /* ProjectListViewController.swift in Sources */,
 				F39DBD8722B81C520080F2E4 /* ProjectDetailViewDelegate.swift in Sources */,
+				F33073BC22BD7DC000F7BEB9 /* ProjectsCoordinator.swift in Sources */,
 				F39DBD7B22B7D6D50080F2E4 /* Bundle+Decoding.swift in Sources */,
 				519AE14D2194787D001F5CFF /* AppDelegate.swift in Sources */,
+				F33073BE22BD7E9000F7BEB9 /* NavigationControlling.swift in Sources */,
+				F39DBD9122B821E50080F2E4 /* NavigationDelegate.swift in Sources */,
 				F39DBD8022B7E0930080F2E4 /* ProjectTableViewDataSource.swift in Sources */,
+				F33073B422BC9B1400F7BEB9 /* Coordinator.swift in Sources */,
+				F33073C122BD7FDE00F7BEB9 /* NavigationCoordinator.swift in Sources */,
 				519AE16F219479E3001F5CFF /* Project.swift in Sources */,
-				519AE17321948C5A001F5CFF /* ReadViewController.swift in Sources */,
+				F39DBD9322B827370080F2E4 /* WKWebView+LoadURLString.swift in Sources */,
 				F39DBD8522B8171E0080F2E4 /* ProjectDetailView.swift in Sources */,
+				F33073B922BD6B0D00F7BEB9 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B5C26XE59E;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HackingWithSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,7 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B5C26XE59E;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HackingWithSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

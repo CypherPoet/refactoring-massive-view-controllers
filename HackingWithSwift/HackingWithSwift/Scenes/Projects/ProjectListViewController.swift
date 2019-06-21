@@ -8,27 +8,26 @@
 
 import UIKit
 
-class ProjectListViewController: UITableViewController {
+class ProjectListViewController: UITableViewController, Storyboarded {
     var dataSource: ProjectTableViewDataSource!
 
+    weak var delegate: ProjectListViewControllerDelegate?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = "Hacking with Swift"
         navigationController?.navigationBar.prefersLargeTitles = true
-
+        
         setupTableView()
     }
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let project = dataSource.project(at: indexPath.row)
         
-        guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
-            return
-        }
-        
-        detailVC.project = project
-        navigationController?.pushViewController(detailVC, animated: true)
+        delegate?.viewController(self, didSelectDetailsFor: project)
     }
 }
 
@@ -36,6 +35,7 @@ class ProjectListViewController: UITableViewController {
 // MARK: - Private helpers
 
 private extension ProjectListViewController {
+    
     func setupTableView() {
         let dataSource = ProjectTableViewDataSource()
         
